@@ -33,15 +33,16 @@ const router = createBrowserRouter([
   { path: '/landing', element: <Landing_16 /> },
   { path: '/login', element: <Login_16 /> },
   {
-    path: '/', element: <AppLayout />,
+    path: '/',
+    element: <AppLayout />,
     children: [
-      { path: 'dashboard', element: <Dashboard_16 />, },
-      { path: 'bookings', element: <Bookings_16 />, },
-      { path: 'bookings/:bookingId', element: <Bookings_16 />, },
-      { path: 'cabins', element: <Cabins_16 />, },
-      { path: 'users', element: <NewUsers_16 />, },
-      { path: 'settings', element: <Settings_16 />, },
-      { path: 'account', element: <Account_16 />, },
+      { path: 'dashboard', element: <Dashboard_16 /> },
+      { path: 'bookings', element: <Bookings_16 /> },
+      { path: 'bookings/:bookingId', element: <Bookings_16 /> },
+      { path: 'cabins', element: <Cabins_16 /> },
+      { path: 'users', element: <NewUsers_16 /> },
+      { path: 'settings', element: <Settings_16 /> },
+      { path: 'account', element: <Account_16 /> },
     ],
   },
 ]);
@@ -56,8 +57,8 @@ const App_16 = () => {
         gutter={12}
         containerStyle={{ margin: '8px' }}
         toastOptions={{
-          success: { duration: 2000, },
-          error: { duration: 3000, },
+          success: { duration: 2000 },
+          error: { duration: 3000 },
           styles: {
             fontSize: '16px',
             maxWidth: '500px',
