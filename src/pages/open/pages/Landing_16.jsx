@@ -20,6 +20,14 @@ const Landing_16 = () => {
                   <li>
                     <Link
                       className='hover:text-accent-400 transition-colors'
+                      to='/landing'
+                    >
+                      Home_16
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      className='hover:text-accent-400 transition-colors'
                       to='/cabins'
                     >
                       Cabins
